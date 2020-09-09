@@ -1,0 +1,19 @@
+/*==================
+    Menu List
+=================*/
+@keyframes moveUp {
+  from {
+    top: 120%;
+  }
+  to {
+    top: 100%;
+  }
+}
+@keyframes moveRightUp {
+  from {
+    top: 20%;
+  }
+  to {
+    top: 0;
+  }
+}

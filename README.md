@@ -1,2 +1,2 @@
 # Template_Ecommerce
-#HTML/CSS/Javascript
+#HTML/SCSS/Javascript
