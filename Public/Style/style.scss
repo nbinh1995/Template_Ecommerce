@@ -10,7 +10,7 @@ html {
   padding: 0;
   margin: 0;
   font-family: "Mukta", sans-serif;
-  font-size: 16px;
+  font-size: $base;
   line-height: 1.7;
 }
 
@@ -214,6 +214,25 @@ a {
   display: flex;
   background-color: $color-blue;
   padding: $xl-base 0;
+  vertical-align: middle;
+  & img {
+    min-height: 600px;
+  }
+  & .col-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  & h1 {
+    width: 80%;
+    font-size: $xl-base;
+    padding: 0;
+    margin: 0;
+  }
+  & p {
+    width: 50%;
+    font-size: $base;
+  }
 }
 /*==============
   section-feature
@@ -244,12 +263,12 @@ a {
   position: relative;
   overflow: hidden;
   display: inline-block;
-  width: 350;
-  height: 460;
+  width: 350px;
+  height: 460px;
   transition: transform 0.5s;
   & img {
-    width: 350;
-    height: 460;
+    width: 350px;
+    height: 460px;
     object-fit: cover;
     object-position: center;
   }
@@ -282,6 +301,7 @@ a {
 }
 .section-title {
   position: relative;
+  font-size: $lg-base;
   &::before {
     content: "";
     position: absolute;
@@ -311,5 +331,81 @@ a {
   & &__price {
     font-weight: bolder;
     color: $color-primary-normal;
+  }
+}
+/*===================
+  section-big-sale
+ ===================*/
+.section-big-sale {
+  & img {
+    width: 100%;
+    height: auto;
+  }
+  &__content {
+    margin: auto 0;
+    color: #d5d5d5;
+    text-align: center;
+    & h3 {
+      color: $color-primary-normal;
+      font-size: $lg-base;
+      margin: 0;
+      padding: 0;
+    }
+    &__author {
+      color: $color-primary-normal;
+    }
+  }
+}
+/*===================
+  section-footer
+ ===================*/
+.section-footer {
+  &__title {
+    font-size: $md-base;
+    font-weight: 500;
+  }
+  & a {
+    color: $color-black;
+    opacity: 0.7;
+  }
+  & img {
+    width: 100%;
+    height: auto;
+    & + h3 {
+      color: $color-primary-normal;
+      font-weight: 300;
+    }
+    & ~ p {
+      color: $color-black;
+      opacity: 0.7;
+    }
+  }
+  & i {
+    color: $color-primary-normal;
+  }
+  & form {
+    margin: $base 0;
+    & label {
+      font-size: $md-base;
+      font-weight: 200;
+    }
+  }
+  & .form-group {
+    position: relative;
+    display: inline-block;
+    &__input {
+      width: 100%;
+      padding: 20px;
+      border: 1px solid #d5d5d5;
+      border-radius: 5px;
+      outline: none;
+    }
+    &__btn {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: $base;
+    }
   }
 }

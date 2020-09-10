@@ -86,15 +86,18 @@
     <section class="section-banner">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6 center">
-                    <img src="https://via.placeholder.com/200x200" alt="img">
+                <div class="col-6">
+                    <img src="https://via.placeholder.com/300x300" alt="img">
                 </div>
                 <div class="col-6">
+                    <div class="section-banner__content">
                     <h1>Finding Your Perfect Shoes</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer
                         accumsan
                         tincidunt fringilla.</p>
                     <a href="" class="btn-default">shop now</a>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -247,12 +250,13 @@
                     <a href=""><img src="https://via.placeholder.com/635x423" alt=""></a>
                 </div>
                 <div class="col-xl-6 padding-tb-sm">
-                    <div class="big-sale__content">
+                    <div class="section-big-sale__content">
                         <h3>50% less in all items</h3>
-                        <p>By <span class="big-sale__author">Carl Smith</span> &#8226; September 3, 2018</p>
+                        <p>By <span class="section-big-sale__content__author">Carl Smith</span> &#8226; September 3, 2018</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iste dolor accusantium
                             facere corporis ipsum animi
                             deleniti fugiat. Ex, veniam?</p>
+                            <a href="" class="btn-default">shop now</a>
                     </div>
                 </div>
             </div>
@@ -265,7 +269,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
-                                <h3>Navigations</h3>
+                                <h3 class="section-footer__title">Navigations</h3>
                             </div>
                             <div class="col-4">
                                 <ul>
@@ -296,7 +300,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-6">
-                                <h3>Promo</h3>
+                                <h3  class="section-footer__title">Promo</h3>
                                 <a href="">
                                     <img src="https://via.placeholder.com/433x200" alt="">
                                     <h3>Finding Your Perfect Shoes</h3>
@@ -304,17 +308,17 @@
                                 </a>
                             </div>
                             <div class="col-6">
-                                <h3>Contact Info</h3>
+                                <h3 class="section-footer__title">Contact Info</h3>
                                 <ul>
-                                    <li> 203 Fake St. Mountain View, San Francisco, California, USA</li>
-                                    <li><a href="tel://23923929210">+2 392 3929 210</a></li>
-                                    <li>emailaddress@domain.com</li>
+                                    <li><i class="fas fa-map-marker-alt"></i> 203 Fake St. Mountain View, San Francisco, California, USA</li>
+                                    <li><i class="fas fa-phone-alt"></i> <a href="tel://23923929210">+2 392 3929 210</a></li>
+                                    <li><i class="fas fa-envelope"></i> emailaddress@domain.com</li>
                                 </ul>
-                                <form action="">
+                                <form action="" >
                                     <label for="">Subscribe</label>
-                                    <div>
-                                        <input type="text">
-                                        <button type="submit" class="btn-default">SEND</button>
+                                    <div class="form-group">
+                                        <input type="text" class="form-group__input" placeholder="Email">
+                                        <button type="submit" class="btn-default form-group__btn">SEND</button>
                                     </div>
                                 </form>
                             </div>
