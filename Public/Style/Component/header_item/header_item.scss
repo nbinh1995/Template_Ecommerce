@@ -265,3 +265,15 @@ a {
     color: $color-primary-normal;
   }
 }
+.section-product__icon {
+  font-size: $md-base;
+  opacity: 0.3;
+  margin: $base 20px;
+  cursor: pointer;
+}
+.slide--none {
+  display: none;
+}
+.row--nowrap {
+  flex-wrap: nowrap;
+}

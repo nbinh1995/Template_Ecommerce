@@ -592,6 +592,28 @@ Gird System
   }
 }
 
+@-webkit-keyframes {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+  }
+}
+
+@keyframes {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+  }
+}
+
 /* ==============
      box-logo
 ==============*/
@@ -927,5 +949,22 @@ a {
 .box-product .box-product__price {
   font-weight: bolder;
   color: #7d79f2;
+}
+
+.section-product__icon {
+  font-size: 25.888px;
+  opacity: 0.3;
+  margin: 16px 20px;
+  cursor: pointer;
+}
+
+.slide--none {
+  display: none;
+}
+
+.row--nowrap {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=header_item.css.map */

@@ -592,6 +592,28 @@ Gird System
   }
 }
 
+@-webkit-keyframes {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+  }
+}
+
+@keyframes {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+  }
+}
+
 /* ==============
     card html
 ==============*/
@@ -1053,6 +1075,7 @@ a {
 .section-footer img {
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .section-footer img + h3 {
@@ -1093,10 +1116,17 @@ a {
 
 .section-footer .form-group__btn {
   position: absolute;
-  right: 0;
+  right: 4px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  padding: 16px;
+  padding: 16px 6.11171px;
+  border: none;
+  cursor: pointer;
+}
+
+.section-footer .copy-right {
+  color: #0d0d0d;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=style.css.map */
