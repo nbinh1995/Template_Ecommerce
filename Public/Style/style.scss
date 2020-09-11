@@ -333,6 +333,20 @@ a {
     color: $color-primary-normal;
   }
 }
+.section-product__icon {
+  font-size: $lg-base;
+  font-weight: 900;
+  margin: $md-base 20px;
+  cursor: pointer;
+}
+.slide--none {
+  display: none;
+}
+.row--nowrap {
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
 /*===================
   section-big-sale
  ===================*/
@@ -415,4 +429,11 @@ a {
     color: $color-black;
     opacity: 0.7;
   }
+}
+/*==================
+    Come in List
+=================*/
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
 }

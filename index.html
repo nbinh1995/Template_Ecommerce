@@ -83,7 +83,7 @@
             </div>
         </div>
     </header>
-    <section class="section-banner">
+    <section class="section-box section-banner">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6">
@@ -102,7 +102,7 @@
             </div>
         </div>
     </section>
-    <section class="section-featured padding-tb">
+    <section class="section-box section-featured padding-tb">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 padding-tb-sm">
@@ -159,8 +159,8 @@
             </div>
         </div>
     </section>
-    <div class="container-fluid border-b"></div>
-    <section class="section-collection">
+    <div class="section-box container-fluid border-b"></div>
+    <section class="section-box section-collection">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-sm-6 padding-tb-sm">
@@ -199,44 +199,82 @@
             </div>
         </div>
     </section>
-    <section class="section-product">
+    <section class="section-box section-product">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 center">
-                    <h2 class="section-title">Featured Products</h2>
-                </div>
+          <div class="row">
+            <div class="col-12 center">
+              <h2 class="section-title">Featured Products</h2>
             </div>
+          </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-xl-4 padding-tb-sm">
-                    <figure class="box-product">
-                        <img src="https://via.placeholder.com/347x246" alt="">
-                        <h3><a href="">Name Product</a></h3>
-                        <p>Description product</p>
-                        <p class="box-product__price">$50</p>
-                    </figure>
-                </div>
-                <div class="col-xl-4 padding-tb-sm">
-                    <figure class="box-product">
-                        <img src="https://via.placeholder.com/347x246" alt="">
-                        <h3><a href="">Name Product</a></h3>
-                        <p>Description product</p>
-                        <p class="box-product__price">$50</p>
-                    </figure>
-                </div>
-                <div class="col-xl-4 padding-tb-sm">
-                    <figure class="box-product">
-                        <img src="https://via.placeholder.com/347x246" alt="">
-                        <h3><a href="">Name Product</a></h3>
-                        <p>Description product</p>
-                        <p class="box-product__price">$50</p>
-                    </figure>
-                </div>
+          <div class="row row--nowrap">
+            <div class="col-xl-4 col-md-6 padding-tb-sm slide">
+              <figure class="box-product">
+                <img src="https://via.placeholder.com/347x246" alt="" />
+                <h3><a href="">Name Product 1</a></h3>
+                <p>Description product</p>
+                <p class="box-product__price">$50</p>
+              </figure>
             </div>
+            <div class="col-xl-4 col-md-6 padding-tb-sm slide">
+              <figure class="box-product">
+                <img src="https://via.placeholder.com/347x246" alt="" />
+                <h3><a href="">Name Product 2</a></h3>
+                <p>Description product</p>
+                <p class="box-product__price">$50</p>
+              </figure>
+            </div>
+            <div class="col-xl-4 col-md-6 padding-tb-sm slide">
+              <figure class="box-product">
+                <img src="https://via.placeholder.com/347x246" alt="" />
+                <h3><a href="">Name Product 3</a></h3>
+                <p>Description product</p>
+                <p class="box-product__price">$50</p>
+              </figure>
+            </div>
+            <div class="col-xl-4 col-md-6 padding-tb-sm slide">
+              <figure class="box-product">
+                <img src="https://via.placeholder.com/347x246" alt="" />
+                <h3><a href="">Name Product 4</a></h3>
+                <p>Description product</p>
+                <p class="box-product__price">$50</p>
+              </figure>
+            </div>
+            <div class="col-xl-4 col-md-6 padding-tb-sm slide">
+              <figure class="box-product">
+                <img src="https://via.placeholder.com/347x246" alt="" />
+                <h3><a href="">Name Product 5</a></h3>
+                <p>Description product</p>
+                <p class="box-product__price">$50</p>
+              </figure>
+            </div>
+            <div class="col-xl-4 col-md-6 padding-tb-sm slide">
+              <figure class="box-product">
+                <img src="https://via.placeholder.com/347x246" alt="" />
+                <h3><a href="">Name Product 6</a></h3>
+                <p>Description product</p>
+                <p class="box-product__price">$50</p>
+              </figure>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 center">
+              <i
+                class="fas fa-arrow-left section-product__icon"
+                onclick="slideLeft()"
+                id="product-left"
+              ></i>
+              <i
+                class="fas fa-arrow-right section-product__icon"
+                onclick="slideRight()"
+                id="product-right"
+              ></i>
+            </div>
+          </div>
         </div>
-    </section>
-    <section class="section-big-sale">
+      </section>
+    <section class="section-box section-big-sale">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 center">
@@ -263,7 +301,7 @@
             </div>
         </div>
     </section>
-    <footer class="section-footer">
+    <footer class="section-box section-footer">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
@@ -336,6 +374,8 @@
             </div>
         </div>
     </footer>
+    <script src="/Public/Script/slide.js"></script>
+    <script src="/Public/Script/lazyloading.js"></script>
 </body>
 
 </html>

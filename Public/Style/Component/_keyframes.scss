@@ -17,11 +17,11 @@
     top: 0;
   }
 }
-@keyframes {
-  from {
-    transform: translateY(0);
-  }
+/*==================
+    Come in List
+=================*/
+@keyframes come-in {
   to {
-    transform: translateY(300px);
+    transform: translateY(0);
   }
 }

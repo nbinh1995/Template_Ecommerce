@@ -52,6 +52,10 @@ Gird System
   vertical-align: middle;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .col-1,
 .col-2,
 .col-3,
@@ -592,25 +596,19 @@ Gird System
   }
 }
 
-@-webkit-keyframes {
-  from {
+/*==================
+    Come in List
+=================*/
+@-webkit-keyframes come-in {
+  to {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-  }
-  to {
-    -webkit-transform: translateY(300px);
-            transform: translateY(300px);
   }
 }
-
-@keyframes {
-  from {
+@keyframes come-in {
+  to {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-  }
-  to {
-    -webkit-transform: translateY(300px);
-            transform: translateY(300px);
   }
 }
 
@@ -952,8 +950,8 @@ a {
 }
 
 .section-product__icon {
-  font-size: 25.888px;
-  opacity: 0.3;
+  font-size: 41.88678px;
+  font-weight: 900;
   margin: 16px 20px;
   cursor: pointer;
 }
