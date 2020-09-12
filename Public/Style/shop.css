@@ -578,6 +578,24 @@ Gird System
   }
 }
 
+@-webkit-keyframes moveUp_gray {
+  from {
+    top: 175%;
+  }
+  to {
+    top: 145%;
+  }
+}
+
+@keyframes moveUp_gray {
+  from {
+    top: 175%;
+  }
+  to {
+    top: 145%;
+  }
+}
+
 @-webkit-keyframes moveRightUp {
   from {
     top: 20%;
@@ -842,112 +860,29 @@ a {
   color: #7d79f2;
 }
 
-/*==============
-  section-tree
- =============*/
-.section-tree {
-  background-color: #f9f9f9;
-  margin-bottom: 67.77282px;
-}
-
-.section-tree .tree-select {
-  color: #0d0d0d;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.section-tree .tree-home {
-  color: #7d79f2;
-}
-
-/*==============
-  button
- =============*/
-.btn-default {
+.box-product {
+  text-align: center;
   display: inline-block;
-  padding: 16px 25.888px;
-  background-color: #7d79f2;
-  border-radius: 5px;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  -webkit-transition: background 0.35s, margin 0.35s;
-  transition: background 0.35s, margin 0.35s;
-}
-
-.btn-default:hover {
-  -webkit-box-shadow: 0 5px 20px -7px rgba(0, 0, 0, 0.9);
-          box-shadow: 0 5px 20px -7px rgba(0, 0, 0, 0.9);
-  background-color: #4f45e3;
-  margin-top: -2px;
-  -webkit-transition: background 0.35s, margin 0.35s;
-  transition: background 0.35s, margin 0.35s;
-}
-
-/*==================
-  section-shop-main
-===================*/
-.shop-sidebar__item {
+  background-color: white;
   border: 1px solid #d5d5d5;
-  padding: 0 16px;
-  border-radius: 10px;
-  margin: 16px 0;
+  width: 250px;
 }
 
-.shop-sidebar__item__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.box-product img {
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: auto;
 }
 
-.shop-sidebar__item__row h5 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 16px;
-  font-weight: 400;
-  opacity: 0.8;
-}
-
-.shop-sidebar__item__row .category-item {
+.box-product h3 a {
   color: #7d79f2;
-  opacity: 1;
 }
 
-.circle {
-  display: inline-block;
-  width: 16px;
-  border-radius: 50%;
-  height: 16px;
-  margin-right: 9.88875px;
+.box-product p {
+  color: #d5d5d5;
 }
 
-.circle--red {
-  background-color: #dc3545;
-}
-
-.circle--green {
-  background-color: #28a745;
-}
-
-.circle--blue {
-  background-color: #17a2b8;
-}
-
-.circle--purple {
-  background-color: #7971ea;
-}
-
-.shop-content-checkbox:checked + .menu-list.menu-list--child {
-  -webkit-animation-name: moveUp;
-          animation-name: moveUp;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  display: block;
+.box-product .box-product__price {
+  font-weight: bolder;
+  color: #7d79f2;
 }
 /*# sourceMappingURL=shop.css.map */

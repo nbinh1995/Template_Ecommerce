@@ -189,94 +189,25 @@ a {
     color: $color-primary-normal;
   }
 }
-/*==============
-  section-tree
- =============*/
-.section-tree {
-  background-color: #f9f9f9;
-  margin-bottom: $xl-base;
-  .tree-select {
-    color: $color-black;
-    font-size: $base;
-    font-weight: 400;
-  }
 
-  .tree-home {
+.box-product {
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  border: 1px solid #d5d5d5;
+  width: 250px;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+  & h3 a {
     color: $color-primary-normal;
   }
-}
-/*==============
-  button
- =============*/
-.btn-default {
-  display: inline-block;
-  padding: $base $md-base;
-  background-color: $color-primary-normal;
-  border-radius: 5px;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  transition: background 0.35s, margin 0.35s;
-  &:hover {
-    box-shadow: 0 5px 20px -7px rgba(0, 0, 0, 0.9);
-    background-color: $color-primary-bold;
-    margin-top: -2px;
-    transition: background 0.35s, margin 0.35s;
+  & p {
+    color: #d5d5d5;
   }
-}
-/*==================
-  section-shop-main
-===================*/
-.shop-sidebar {
-  &__item {
-    border: 1px solid #d5d5d5;
-    padding: 0 $base;
-    border-radius: 10px;
-    margin: $base 0;
-    &__row {
-      display: flex;
-      width: 100%;
-      align-items: center;
-      & h5 {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: $base;
-        font-weight: 400;
-        opacity: 0.8;
-      }
-      & .category-item {
-        color: $color-primary-normal;
-        opacity: 1;
-      }
-    }
+  & &__price {
+    font-weight: bolder;
+    color: $color-primary-normal;
   }
-}
-.circle {
-  display: inline-block;
-  width: $base;
-  border-radius: 50%;
-  height: $base;
-  margin-right: $sm-base;
-  &--red {
-    background-color: #dc3545;
-  }
-  &--green {
-    background-color: #28a745;
-  }
-  &--blue {
-    background-color: #17a2b8;
-  }
-  &--purple {
-    background-color: #7971ea;
-  }
-}
-.shop-content-checkbox {
-  &:checked + .menu-list.menu-list--child {
-    animation-name: moveUp;
-    animation-duration: 0.3s;
-    animation-iteration-count: 1;
-    display: block;
-  }
-}
-.shop-content {
 }

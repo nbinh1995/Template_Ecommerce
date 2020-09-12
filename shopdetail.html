@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOPPERS | SHOPPING CART</title>
+    <title>SHOPPERS | DETAIL SHOP</title>
     <link rel="stylesheet" href="/Public/Libs/node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
     <link rel="stylesheet" href="/Public/Style/style.css" />
 </head>
@@ -94,8 +94,118 @@
             <div class="row">
                 <div class="col-12">
                     <h3 class="tree-select">
-                        <span class="tree-home">Home / </span> Shopping Cart
+                        <span class="tree-home">Home / </span> Detail Shop
                     </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-box section-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 padding-tb-sm">
+                    <a href=""><img src="https://via.placeholder.com/635x423" alt=""></a>
+                </div>
+                <div class="col-xl-6 padding-tb-sm">
+                    <h3 class="section-detail__title">Tank Top T-Shirt</h3>
+                    <p class="section-detail__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
+                        vitae, explicabo?
+                        Incidunt facere, natus soluta
+                        dolores iusto! Molestiae expedita veritatis nesciunt doloremque sint asperiores fuga
+                        voluptas, distinctio, aperiam,
+                        ratione dolore.
+                        Ex numquam veritatis debitis minima quo error quam eos dolorum quidem perferendis. Quos
+                        repellat dignissimos minus,
+                        eveniet nam voluptatibus molestias omnis reiciendis perspiciatis illum hic magni iste, velit
+                        aperiam quis.</p>
+                    <span class="section-detail__price">$50</span>
+                    <div class="section-detail__size">
+                        <label for="size-small" class="shop-sidebar__item__row">
+                            <input type="radio" name="size-product" id="size-small" />
+                            <span>Small</span></label>
+                        <label for="size-small" class="shop-sidebar__item__row">
+                            <input type="radio" name="size-product" id="size-small" />
+                            <span>Medium</span></label>
+                        <label for="size-small" class="shop-sidebar__item__row">
+                            <input type="radio" name="size-product" id="size-small" />
+                            <span>Large</span></label>
+                        <label for="size-small" class="shop-sidebar__item__row">
+                            <input type="radio" name="size-product" id="size-small" />
+                            <span>Extra Large</span></label>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group__pre" onclick="btnMinus(this)">-</span>
+                        <span class="input-group__pre input-group__pre--right" onclick="btnPlus(this)">+</span>
+                        <input type="number" class="input-group__display" value="1" min="1">
+                    </div>
+                    <a href="" class="btn-default">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-box section-product">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 center">
+                    <h2 class="section-title">Featured Products</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row--nowrap">
+                <div class="col-xl-4 col-sm-6 padding-tb-sm slide">
+                    <figure class="box-product">
+                        <img src="https://via.placeholder.com/347x246" alt="" />
+                        <h3><a href="">Name Product 1</a></h3>
+                        <p>Description product</p>
+                        <p class="box-product__price">$50</p>
+                    </figure>
+                </div>
+                <div class="col-xl-4 col-sm-6 padding-tb-sm slide">
+                    <figure class="box-product">
+                        <img src="https://via.placeholder.com/347x246" alt="" />
+                        <h3><a href="">Name Product 2</a></h3>
+                        <p>Description product</p>
+                        <p class="box-product__price">$50</p>
+                    </figure>
+                </div>
+                <div class="col-xl-4 col-sm-6 padding-tb-sm slide">
+                    <figure class="box-product">
+                        <img src="https://via.placeholder.com/347x246" alt="" />
+                        <h3><a href="">Name Product 3</a></h3>
+                        <p>Description product</p>
+                        <p class="box-product__price">$50</p>
+                    </figure>
+                </div>
+                <div class="col-xl-4 col-sm-6 padding-tb-sm slide">
+                    <figure class="box-product">
+                        <img src="https://via.placeholder.com/347x246" alt="" />
+                        <h3><a href="">Name Product 4</a></h3>
+                        <p>Description product</p>
+                        <p class="box-product__price">$50</p>
+                    </figure>
+                </div>
+                <div class="col-xl-4 col-sm-6 padding-tb-sm slide">
+                    <figure class="box-product">
+                        <img src="https://via.placeholder.com/347x246" alt="" />
+                        <h3><a href="">Name Product 5</a></h3>
+                        <p>Description product</p>
+                        <p class="box-product__price">$50</p>
+                    </figure>
+                </div>
+                <div class="col-xl-4 col-sm-6 padding-tb-sm slide">
+                    <figure class="box-product">
+                        <img src="https://via.placeholder.com/347x246" alt="" />
+                        <h3><a href="">Name Product 6</a></h3>
+                        <p>Description product</p>
+                        <p class="box-product__price">$50</p>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 center">
+                    <i class="fas fa-arrow-left section-product__icon" onclick="slideLeft()" id="product-left"></i>
+                    <i class="fas fa-arrow-right section-product__icon" onclick="slideRight()" id="product-right"></i>
                 </div>
             </div>
         </div>
@@ -173,7 +283,8 @@
             </div>
         </div>
     </footer>
-    <script src="/Public/Script/lazyloading_home.js"></script>
+    <script src="/Public/Script/lazyloading_shop.js"></script>
+    <script src="/Public/Script/slide.js"></script>
 </body>
 
 </html>

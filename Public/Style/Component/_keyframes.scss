@@ -9,6 +9,14 @@
     top: 100%;
   }
 }
+@keyframes moveUp_gray {
+  from {
+    top: 175%;
+  }
+  to {
+    top: 145%;
+  }
+}
 @keyframes moveRightUp {
   from {
     top: 20%;

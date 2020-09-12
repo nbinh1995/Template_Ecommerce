@@ -168,12 +168,12 @@ a {
   color: white;
   text-transform: uppercase;
   letter-spacing: 3px;
-  transition: background 0.35s, margin 0.35s;
+  transition: background 0.35s, transform 0.35s;
   &:hover {
     box-shadow: 0 5px 20px -7px rgba(0, 0, 0, 0.9);
     background-color: $color-primary-bold;
-    margin-top: -2px;
-    transition: background 0.35s, margin 0.35s;
+    transform: translateY(-10%);
+    transition: background 0.35s, transform 0.35s;
   }
 }
 /*==============
@@ -277,4 +277,44 @@ a {
 .row--nowrap {
   flex-wrap: nowrap;
   overflow-x: hidden;
+}
+/*===================
+  input group
+ ===================*/
+.input-group {
+  display: inline-flex;
+  &__pre {
+    display: inline-block;
+    padding: $sm-base;
+    margin: 0;
+    border: 1px solid $color-primary-normal;
+    border-radius: 10px 0 0 10px;
+    color: $color-primary-normal;
+    font-weight: bolder;
+    transition: background 0.35s, transform 0.35s;
+    &--right {
+      border-radius: 0px 10px 10px 0px;
+      order: 3;
+    }
+    &:hover {
+      box-shadow: 0 5px 20px -7px rgba(0, 0, 0, 0.9);
+      background-color: $color-primary-bold;
+      transform: translateY(-10%);
+      transition: background 0.35s, transform 0.35s;
+    }
+  }
+  &__display {
+    width: 50px;
+    padding: $sm-base 0;
+    margin: 0;
+    border: 1px solid rgba(125, 121, 242, 0.5);
+    outline: none;
+    text-align: center;
+    &:focus {
+      border: 1px solid $color-primary-normal;
+    }
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+  }
 }
