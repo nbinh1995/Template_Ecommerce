@@ -119,17 +119,18 @@ figure {
 /*==============
   menu list
  =============*/
-ul,
-li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+
 a {
   text-decoration: none;
   color: $color-black;
 }
 .menu-list {
+  & ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
   & .active > a {
     color: $color-primary-normal;
   }
@@ -624,6 +625,7 @@ a {
     text-align: center;
     vertical-align: middle;
     margin: 0 auto;
+    padding: $sm-base;
   }
 }
 .text-coupon {

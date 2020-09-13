@@ -776,16 +776,16 @@ figure {
 /*==============
   menu list
  =============*/
-ul,
-li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 a {
   text-decoration: none;
   color: #0d0d0d;
+}
+
+.menu-list ul,
+.menu-list li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu-list .active > a {
@@ -1425,6 +1425,7 @@ a {
   text-align: center;
   vertical-align: middle;
   margin: 0 auto;
+  padding: 9.88875px;
 }
 
 .text-coupon h3 {
