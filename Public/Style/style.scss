@@ -22,6 +22,10 @@ figure {
 .section-header {
   width: 100%;
 }
+.text-danger {
+  color: red;
+}
+
 .padding-tb {
   padding-top: $lg-base;
   padding-bottom: $lg-base;
@@ -125,16 +129,16 @@ a {
   color: $color-black;
 }
 .menu-list {
+  & .active > a {
+    color: $color-primary-normal;
+  }
   & ul,
   li {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  & .active > a {
-    color: $color-primary-normal;
-  }
-  &__item {
+  & &__item {
     position: relative;
     text-transform: uppercase;
     display: inline-block;
@@ -425,32 +429,33 @@ a {
 /*==================
   section-shop-main
 ===================*/
-.shop-sidebar {
-  & .widget {
-    border: 1px solid #d5d5d5;
-    padding: 0 $base;
-    border-radius: 10px;
-    margin-bottom: $base;
-    &__row {
-      display: flex;
-      width: 100%;
-      align-items: center;
-      & h5 {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: $base;
-        font-weight: 400;
-        opacity: 0.8;
-      }
-      & p {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-      & .category-item {
-        color: $color-primary-normal;
-        opacity: 1;
-      }
+.widget {
+  border: 1px solid #d5d5d5;
+  padding: 0 $base;
+  border-radius: 10px;
+  margin-bottom: $base;
+  &__row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    & h5 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: $base;
+      font-weight: 400;
+      opacity: 0.8;
     }
+    & p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    & .text-bold {
+      font-weight: 900;
+    }
+  }
+  & .category-item {
+    color: $color-primary-normal;
+    opacity: 1;
   }
 }
 .circle {
@@ -601,7 +606,7 @@ a {
   }
 }
 /*===================
-  section-checkout
+  section-cart
  ===================*/
 .table-box {
   width: 100%;
@@ -648,6 +653,12 @@ a {
   & a {
     color: $color-black;
     opacity: 0.7;
+  }
+  & ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
   & img {
     width: 100%;
@@ -704,4 +715,7 @@ a {
 .come-in {
   transform: translateY(150px);
   animation: come-in 0.8s ease forwards;
+}
+.p-5 {
+  padding: $md-base;
 }

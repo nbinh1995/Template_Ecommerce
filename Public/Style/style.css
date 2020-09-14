@@ -653,6 +653,10 @@ figure {
   width: 100%;
 }
 
+.text-danger {
+  color: red;
+}
+
 .padding-tb {
   padding-top: 41.88678px;
   padding-bottom: 41.88678px;
@@ -781,6 +785,10 @@ a {
   color: #0d0d0d;
 }
 
+.menu-list .active > a {
+  color: #7d79f2;
+}
+
 .menu-list ul,
 .menu-list li {
   list-style: none;
@@ -788,18 +796,14 @@ a {
   margin: 0;
 }
 
-.menu-list .active > a {
-  color: #7d79f2;
-}
-
-.menu-list__item {
+.menu-list .menu-list__item {
   position: relative;
   text-transform: uppercase;
   display: inline-block;
   padding: 16px;
 }
 
-.menu-list__item__icon {
+.menu-list .menu-list__item__icon {
   position: absolute;
   right: 16px;
   opacity: 0.5;
@@ -1168,14 +1172,14 @@ a {
 /*==================
   section-shop-main
 ===================*/
-.shop-sidebar .widget {
+.widget {
   border: 1px solid #d5d5d5;
   padding: 0 16px;
   border-radius: 10px;
   margin-bottom: 16px;
 }
 
-.shop-sidebar .widget__row {
+.widget__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1185,7 +1189,7 @@ a {
           align-items: center;
 }
 
-.shop-sidebar .widget__row h5 {
+.widget__row h5 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
@@ -1193,12 +1197,16 @@ a {
   opacity: 0.8;
 }
 
-.shop-sidebar .widget__row p {
+.widget__row p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.shop-sidebar .widget__row .category-item {
+.widget__row .text-bold {
+  font-weight: 900;
+}
+
+.widget .category-item {
   color: #7d79f2;
   opacity: 1;
 }
@@ -1396,7 +1404,7 @@ a {
 }
 
 /*===================
-  section-checkout
+  section-cart
  ===================*/
 .table-box {
   width: 100%;
@@ -1448,6 +1456,13 @@ a {
 .section-footer a {
   color: #0d0d0d;
   opacity: 0.7;
+}
+
+.section-footer ul,
+.section-footer li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .section-footer img {
@@ -1517,5 +1532,9 @@ a {
           transform: translateY(150px);
   -webkit-animation: come-in 0.8s ease forwards;
           animation: come-in 0.8s ease forwards;
+}
+
+.p-5 {
+  padding: 25.888px;
 }
 /*# sourceMappingURL=style.css.map */
